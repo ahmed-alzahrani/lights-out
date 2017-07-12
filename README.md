@@ -1,7 +1,17 @@
 # lights-out
 
-Purpose
-========
-A simple game of Lights Out that I wrote as a project for COMP1406 (Intro to Computer Science II) at Carleton University
+**The Game:**
 
-Written in JAVA, lights-out uses basic GUI concepts. The game starts out by initializing an array of buttons for the user that can be one of four colours. By pressing any button, the user causes the colour of that button, AND any adjacent buttons to change to the next colour in the sequence. The game is won by turning the entire board one colour.
+Lights-Out is a simple game created as a class project for COMP 1405 (Intro to Computer Science) at Carleton University in the fall of 2013.
+
+Working with JAVA, and exploring the usage of GUI elements (JFrame, JPanels etc.) as well as the concept of event handling, Lights Out is essentially a digital rubix cube.
+
+The game initializes with a 5x5 grid of buttons that are randomized between four colours (Red, Yellow, Blue, White). Clicking on any single button will cause that button, as well as any adjacent buttons to the next colour in the array.
+
+To win the game, the user must turn the entire board into one single colour. The user will then be presented with the Victory Frame, informing them of their victory as well as their score (how many clicks it took).
+
+**Advanced Tips:**
+
+1. In order to customize the size of the game board, simply change the dimensions in the `GameBoard` constructor in `mainColours.java`
+
+2. Because I found the game exceedingly difficult to win, I created a `testVictory()` function which, if the user clicks the FIRST button (located at 0,0 on the board) it will turn the entire board blue, thus winning the game. Currently it is commented out, but it can be uncommented at the end of the `actionPerformed(ActionEvent e)` function in `GameBoard.java`
