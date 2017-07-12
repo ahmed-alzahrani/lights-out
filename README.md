@@ -8,7 +8,12 @@ Working with JAVA, and exploring the usage of GUI elements (JFrame, JPanels etc.
 
 The game initializes with a 5x5 grid of buttons that are randomized between four colours (Red, Yellow, Blue, White). Clicking on any single button will cause that button, as well as any adjacent buttons to the next colour in the array.
 
+At the bottom of the board, the game will track both the most recently clicked button (row/col) as well as how many moves have been made so far.
+
 To win the game, the user must turn the entire board into one single colour. The user will then be presented with the Victory Frame, informing them of their victory as well as their score (how many clicks it took).
+
+**Compilation/Execution:**
+From within the directory, use the command `javac mainColours.java` in order to compile the `.java` files into `.class` files. From there, simply `java mainColours` to launch the game.
 
 **Advanced Tips:**
 
