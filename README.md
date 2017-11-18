@@ -1,4 +1,4 @@
-# lights-out
+# lights-out V1.2
 
 **The Game:**
 
@@ -20,3 +20,10 @@ From within the directory, use the command `javac mainColours.java` in order to 
 1. In order to customize the size of the game board, simply change the dimensions in the `GameBoard` constructor in `mainColours.java`
 
 2. Because I found the game exceedingly difficult to win, I created a `testVictory()` function which, if the user clicks the FIRST button (located at 0,0 on the board) it will turn the entire board blue, thus winning the game. Currently it is commented out, but it can be uncommented at the end of the `actionPerformed(ActionEvent e)` function in `GameBoard.java`
+
+
+**V 1.2 Changes**
+
+1. Updated the code of this project to be much cleaner and more module. Frankly, some of the stylistic choices the 1st year version of myself made were rather embarrassing.
+
+2. Future consideration to add a high score feature, potentially a new high score will write to a file that the game will check on start-up, and the user will have the option to reset the high schore (clear whatever value is written in the file) at any time.
